@@ -2,43 +2,111 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oil and Gas Engineering Courses</title>
   <style>
     /* Add your CSS styles here */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f1f1f1;
     }
 
     header {
-      background-color: lightgray;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
       padding: 20px;
-      text-align: center;
     }
 
     header h1 {
       margin: 0;
     }
 
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
     main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       margin: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      margin-top: 20px;
+    }
+
+    .card p {
+      margin: 20px;
+    }
+
+    .card button {
+      background-color: #333;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <h1>Oil and Gas Engineering Courses</h1>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+    </div>
   </header>
 
   <main>
     <!-- Add your HTML content here -->
-    <p>Welcome to my website!</p>
+    <div class="card">
+      <h2>Course 1</h2>
+      <p>Description of Course 1</p>
+      <button>Learn More</button>
+    </div>
+    <div class="card">
+      <h2>Course 2</h2>
+      <p>Description of Course 2</p>
+      <button>Learn More</button>
+    </div>
   </main>
-
-  <!-- Add your JavaScript code here -->
-  <script>
-    console.log("Hello, World!");
-  </script>
-</body>
-</html>
