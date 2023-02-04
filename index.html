@@ -3,39 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
     <style>
-      #feed {
-        position: relative;
-        height: 200px;
-        overflow: hidden;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
       
-      #items {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #f2f2f2;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
       }
     </style>
-    <title>Scrolling Feed</title>
+    <title>Example Website</title>
   </head>
   <body>
-    <div id="feed">
-      <ul id="items">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-      </ul>
+    <div class="container">
+      <h1>Welcome to Example Website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eu bibendum tincidunt, est ipsum congue sem, ac consectetur magna massa in leo.</p>
+      <a href="#" class="btn">Learn More</a>
     </div>
-    
-    <script>
-      window.onscroll = function() {
-        const feed = document.querySelector('#feed');
-        const scrolled = window.scrollY;
-        feed.style.top = -scrolled + 'px';
-      };
-    </script>
   </body>
 </html>
