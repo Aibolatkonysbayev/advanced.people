@@ -18,40 +18,90 @@
         background-color: #f2f2f2;
       }
       
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px 20px;
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       
-      h1 {
+      .header a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      
+      .header h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      
+      .hero {
+        background-image: url('./hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      
+      .hero p {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      
+      .hero .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      
+      .services {
+        padding: 40px 0;
+      }
+      
+      .services h2 {
         font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      
+      .services .service {
+        text-align: center;
+        width: 33.33%;
+        padding: 40px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      .services .service img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+      
+      .services .service h3 {
+        font-size: 24px;
         font-weight: 700;
         margin-bottom: 20px;
       }
       
-      p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-      
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-    </style>
-    <title>Example Website</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to Example Website</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc eu bibendum tincidunt, est ipsum congue sem, ac consectetur magna massa in leo.</p>
-      <a href="#" class="btn">Learn More</a>
-    </div>
-  </body>
-</html>
+      .services .service p {
+        font-size: 16
