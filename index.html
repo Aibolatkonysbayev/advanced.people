@@ -1,60 +1,78 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      /* Define styles for the header */
-      header {
-        background-color: lightblue;
-        padding: 20px;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8">
+  <title>My Training Courses</title>
+  <style type="text/css">
+    /* Style for the main container */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-      /* Define styles for the course section */
-      .course {
-        width: 600px;
-        margin: 20px auto;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid lightgray;
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px gray;
-      }
+    /* Style for the header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
 
-      /* Define styles for course title */
-      .course h2 {
-        font-size: 36px;
-        margin-top: 0;
-        margin-bottom: 20px;
-      }
+    /* Style for the header h1 tag */
+    header h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-      /* Define styles for course description */
-      .course p {
-        font-size: 16px;
-        text-align: left;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
+    /* Style for the course cards */
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin: 0 20px 40px;
+      padding: 20px;
+      text-align: left;
+      width: calc(33.33% - 40px);
+    }
 
-      /* Define styles for hashtags */
-      .course .hashtags {
-        font-size: 14px;
-        font-style: italic;
-        margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
+    /* Style for the course h2 tag */
+    .card h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Style for the course p tag */
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Style for the course hashtags */
+    .card .hashtags {
+      font-size: 12px;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <header>
-      <h1>Training Courses</h1>
+      <h1>My Training Courses</h1>
     </header>
-    <section class="course">
+
+    <div class="card">
       <h2>Petroleum Engineering</h2>
-      <p>Excited to announce the launch of our new course in the field of Petroleum Engineering! Get ready to dive into the world of exploration, production and management of oil and gas resources. Our goal is to equip you with a comprehensive understanding of the industry and the skills needed to succeed as an engineer in this field. Whether you're a beginner or have prior experience, this course will provide you with the knowledge and hands-on training you need to excel. So, don't miss out on this opportunity to enhance your skills and kickstart your career in the thriving field of Petroleum Engineering.</p>
+      <p>Excited to announce the launch of our new course in the field of Petroleum Engineering! Get ready to dive into the world of exploration, production and management of oil and gas resources. Our goal is to equip you with a comprehensive understanding of the industry and the skills needed to succeed as an engineer in this field. Whether you're a beginner or have prior experience, this course will provide you with the knowledge and hands-on training you need to excel.</p>
       <div class="hashtags">#PetroleumEngineering #OilAndGas #CareerGoals #LearnWithUs</div>
-    </section>
-    <section class="course">
+    </div>
+
+    <div class="card">
       <h2>Oil and Gas Industry</h2>
-      <p>Get a glimpse into the exciting world of the oil and gas industry! This essential sector plays a crucial role in meeting the world's energy needs and drives global economic growth. From the exploration of new reserves to the production and delivery of petroleum products, the industry is constantly evolving and presents numerous opportunities for those seeking a dynamic and challenging career. In this course, you'll learn about the key processes and techniques involved in the oil and gas industry and gain a better understanding of its significance. Join us on this journey and discover the endless possibilities that await in the world of petroleum engineering!</p>
-      <div class="hashtags">#OilAndGasIndustry #PetroleumEngineering #CareerOpportunities #LearnWithUs</div>
-    </section>
-  </body>
-</html>
+      <p>Get a glimpse into the exciting world of the oil and gas industry! This essential sector plays a crucial role in meeting the world's energy needs and drives global economic growth. From the exploration of new reserves to the production and delivery of petroleum products, the industry is constantly evolving and presents numerous opportunities for those seeking a dynamic and challenging career. In this course, you'll learn about
